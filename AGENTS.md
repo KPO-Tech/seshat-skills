@@ -1,13 +1,13 @@
-# nexus-skills — Agent Instructions
+# seshat-skills — Agent Instructions
 
-This repository contains the official Nexus skills collection. It is automatically cloned by Nexus at first boot and updated in the background.
+This repository contains the official SeshatOS skills collection. It is automatically cloned by SeshatOS at first boot and updated in the background.
 
 ## Structure
 
 Each top-level directory is one skill:
 
 ```
-nexus-skills/
+seshat-skills/
 ├── skill-creator/           meta-skill for creating new skills
 ├── subagent-driven-development/  parallel subagent execution with review gates
 ├── systematic-debugging/    root-cause-first debugging protocol

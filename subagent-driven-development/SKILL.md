@@ -63,7 +63,7 @@ digraph process {
     "Read plan, extract all tasks with full text, note context, create TodoWrite" [shape=box];
     "More tasks remain?" [shape=diamond];
     "Dispatch final code reviewer subagent for entire implementation" [shape=box];
-    "Use nexus-skills:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
+    "Use seshat-skills:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
 
     "Read plan, extract all tasks with full text, note context, create TodoWrite" -> "Dispatch implementer subagent (./implementer-prompt.md)";
     "Dispatch implementer subagent (./implementer-prompt.md)" -> "Implementer subagent asks questions?";
@@ -82,7 +82,7 @@ digraph process {
     "Mark task complete in TodoWrite" -> "More tasks remain?";
     "More tasks remain?" -> "Dispatch implementer subagent (./implementer-prompt.md)" [label="yes"];
     "More tasks remain?" -> "Dispatch final code reviewer subagent for entire implementation" [label="no"];
-    "Dispatch final code reviewer subagent for entire implementation" -> "Use nexus-skills:finishing-a-development-branch";
+    "Dispatch final code reviewer subagent for entire implementation" -> "Use seshat-skills:finishing-a-development-branch";
 }
 ```
 
@@ -130,7 +130,7 @@ Implementer subagents report one of four statuses. Handle each appropriately:
 ```
 You: I'm using Subagent-Driven Development to execute this plan.
 
-[Read plan file once: docs/nexus/plans/feature-plan.md]
+[Read plan file once: docs/seshat/plans/feature-plan.md]
 [Extract all 5 tasks with full text and context]
 [Create TodoWrite with all tasks]
 
@@ -141,7 +141,7 @@ Task 1: Hook installation script
 
 Implementer: "Before I begin - should the hook be installed at user or system level?"
 
-You: "User level (~/.nexus/hooks/)"
+You: "User level (~/.seshat/hooks/)"
 
 Implementer: "Got it. Implementing now..."
 [Later] Implementer:
@@ -267,9 +267,9 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **nexus-skills:writing-plans** — Creates the plan this skill executes
-- **nexus-skills:requesting-code-review** — Code review template for reviewer subagents
-- **nexus-skills:verification-before-completion** — Final verification before marking branch done
+- **seshat-skills:writing-plans** — Creates the plan this skill executes
+- **seshat-skills:requesting-code-review** — Code review template for reviewer subagents
+- **seshat-skills:verification-before-completion** — Final verification before marking branch done
 
 **Subagents should use:**
-- **nexus-skills:test-driven-development** — Subagents follow TDD for each task
+- **seshat-skills:test-driven-development** — Subagents follow TDD for each task

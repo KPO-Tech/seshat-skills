@@ -1,12 +1,12 @@
 ---
 name: skill-creator
-description: Create new Nexus skills, improve and optimize existing skills, run evaluations to test skill quality, and optimize skill descriptions for better triggering accuracy. Use whenever the user wants to build a skill from scratch, refine an existing one, test a skill against sample prompts, compare two versions, or get a skill ready for real-world use.
+description: Create new SeshatOS skills, improve and optimize existing skills, run evaluations to test skill quality, and optimize skill descriptions for better triggering accuracy. Use whenever the user wants to build a skill from scratch, refine an existing one, test a skill against sample prompts, compare two versions, or get a skill ready for real-world use.
 user-invocable: true
 ---
 
 # Skill Creator
 
-A skill for creating, testing, and iteratively improving Nexus skills.
+A skill for creating, testing, and iteratively improving SeshatOS skills.
 
 The process, at a high level:
 
@@ -48,13 +48,13 @@ Ask if needed:
 
 Ask about edge cases, input/output formats, example content, success criteria, dependencies. Use `web_search`, `web_fetch`, or `wikipedia` to research the domain if it would improve the skill. Don't rush to the first draft — context makes better skills.
 
-Use `nexus_list_skills` to see what skills already exist. Use `nexus_read_skill` to read similar skills for inspiration and to avoid duplication.
+Use `seshat_list_skills` to see what skills already exist. Use `seshat_read_skill` to read similar skills for inspiration and to avoid duplication.
 
 ### Write the skill.md
 
 Skill files live at: `${NEXUS_SKILL_DIR}/../{skill-name}/skill.md`
 
-Write to: the user skills directory, typically `~/.nexus/skills/users/{userID}/{skill-name}/skill.md`
+Write to: the user skills directory, typically `~/.seshat/skills/users/{userID}/{skill-name}/skill.md`
 
 Fill in:
 - **`name`**: Human-readable display name
@@ -225,9 +225,9 @@ Once all runs are done:
 
 4. **Ask for feedback** — "How does this look? What would you change?"
 
-### Step 4: Use nexus_validate_skill
+### Step 4: Use seshat_validate_skill
 
-Run `nexus_validate_skill` to catch structural issues (missing fields, frontmatter errors, quality warnings) before finalizing.
+Run `seshat_validate_skill` to catch structural issues (missing fields, frontmatter errors, quality warnings) before finalizing.
 
 ---
 
@@ -290,7 +290,7 @@ For each candidate description, test it against the eval set:
 3. Propose a revised description that fixes the failures
 4. Repeat up to 5 iterations, tracking scores
 
-Report the best description found, with before/after scores. Use `nexus_validate_skill` to check the updated skill.
+Report the best description found, with before/after scores. Use `seshat_validate_skill` to check the updated skill.
 
 ### How Skill Triggering Works
 
@@ -305,7 +305,7 @@ Skills appear in the model's `available_skills` list with name + description. Th
 - `agents/analyzer.md` — How to analyze benchmark results
 
 - `references/schemas.md` — JSON schemas for evals.json, grading.json, benchmark output
-- `references/nexus-skill-format.md` — Complete Nexus skill format spec (frontmatter fields, variable substitution, directory layout, validation rules)
+- `references/seshat-skill-format.md` — Complete SeshatOS skill format spec (frontmatter fields, variable substitution, directory layout, validation rules)
 
 ---
 

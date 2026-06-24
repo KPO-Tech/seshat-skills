@@ -1,6 +1,6 @@
-# Nexus Skill Format Reference
+# SeshatOS Skill Format Reference
 
-Complete specification of the Nexus skill format.
+Complete specification of the SeshatOS skill format.
 
 ## skill.md Structure
 
@@ -146,7 +146,7 @@ description: "Assists with writing tasks: drafting, editing, rewriting, tone adj
 
 ## Validation Rules
 
-A valid Nexus skill must have:
+A valid SeshatOS skill must have:
 1. A `skill.md` file at the root of the skill directory
 2. Valid YAML frontmatter (parseable, with `name` and `description` fields)
 3. Non-empty body (content after the frontmatter)

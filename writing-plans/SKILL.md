@@ -15,7 +15,7 @@ Assume they are a skilled developer, but know almost nothing about our toolset o
 
 **Context:** If working in an isolated branch or worktree, make sure it was set up before writing the plan.
 
-**Save plans to:** `docs/nexus/plans/YYYY-MM-DD-<feature-name>.md`
+**Save plans to:** `docs/seshat/plans/YYYY-MM-DD-<feature-name>.md`
 - (User preferences for plan location override this default)
 
 ## Scope Check
@@ -49,7 +49,7 @@ This structure informs the task decomposition. Each task should produce self-con
 ```markdown
 # [Feature Name] Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use nexus-skills:subagent-driven-development (recommended) or nexus-skills:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use seshat-skills:subagent-driven-development (recommended) or seshat-skills:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** [One sentence describing what this builds]
 
@@ -135,7 +135,7 @@ If you find issues, fix them inline. No need to re-review — just fix and move 
 
 After saving the plan, offer execution choice:
 
-**"Plan complete and saved to `docs/nexus/plans/<filename>.md`. Two execution options:**
+**"Plan complete and saved to `docs/seshat/plans/<filename>.md`. Two execution options:**
 
 **1. Subagent-Driven (recommended)** - I dispatch a fresh subagent per task, review between tasks, fast iteration
 
@@ -144,9 +144,9 @@ After saving the plan, offer execution choice:
 **Which approach?"**
 
 **If Subagent-Driven chosen:**
-- **REQUIRED SUB-SKILL:** Use nexus-skills:subagent-driven-development
+- **REQUIRED SUB-SKILL:** Use seshat-skills:subagent-driven-development
 - Fresh subagent per task + two-stage review
 
 **If Inline Execution chosen:**
-- **REQUIRED SUB-SKILL:** Use nexus-skills:executing-plans
+- **REQUIRED SUB-SKILL:** Use seshat-skills:executing-plans
 - Batch execution with checkpoints for review

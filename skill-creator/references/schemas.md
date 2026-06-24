@@ -1,4 +1,4 @@
-# Nexus Skill Creator — JSON Schemas
+# SeshatOS Skill Creator — JSON Schemas
 
 This document defines the JSON schemas used by the skill-creator workflow.
 

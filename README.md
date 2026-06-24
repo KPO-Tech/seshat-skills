@@ -1,12 +1,12 @@
-# nexus-skills
+# seshat-skills
 
-Official skill collection for [Nexus](https://github.com/EngineerProjects/Nexus_ai). Automatically installed at first boot — skills are available without any manual setup.
+Official skill collection for [SeshatOS](https://github.com/EngineerProjects/Nexus_ai). Automatically installed at first boot — skills are available without any manual setup.
 
 ## Skills
 
 | Skill | Description |
 |---|---|
-| `skill-creator` | Create, test, and iteratively improve Nexus skills with evaluations |
+| `skill-creator` | Create, test, and iteratively improve SeshatOS skills with evaluations |
 | `brainstorming` | Design-before-code exploration (optional visual companion — requires Node.js) |
 | `writing-plans` | Write comprehensive implementation plans before touching code |
 | `subagent-driven-development` | Execute plans using fresh subagents per task with spec + quality review gates |
@@ -26,7 +26,7 @@ Official skill collection for [Nexus](https://github.com/EngineerProjects/Nexus_
 Each top-level directory is one skill:
 
 ```
-nexus-skills/
+seshat-skills/
 ├── <skill-name>/
 │   ├── SKILL.md          # required — frontmatter + instructions
 │   ├── agents/           # optional — sub-role definitions (read on demand)
@@ -34,7 +34,7 @@ nexus-skills/
 │   └── scripts/          # optional — executable utilities
 ```
 
-Skills are installed to `.nexus/skills/repos/nexus-skills/` and updated in the background (at most once per hour).
+Skills are installed to `.seshat/skills/repos/seshat-skills/` and updated in the background (at most once per hour).
 
 ## Credits and Licenses
 
@@ -50,14 +50,14 @@ This collection brings together content from several open-source projects. Each 
 The following skills are adapted from superpowers:
 
 - `brainstorming/` — adapted (paths updated, Node.js `requires` added)
-- `subagent-driven-development/` — adapted (`superpowers:` skill refs → `nexus-skills:`)
+- `subagent-driven-development/` — adapted (`superpowers:` skill refs → `seshat-skills:`)
 - `systematic-debugging/` — adapted (minor wording)
 - `verification-before-completion/` — used as-is
 - `requesting-code-review/` — used as-is
 - `writing-plans/` — adapted (plan storage path updated)
 - `test-driven-development/` — used as-is
 
-Modifications: cross-skill references updated from `superpowers:` to `nexus-skills:`, storage paths updated from `docs/superpowers/` to `docs/nexus/`, platform-specific hooks and bootstrap removed, `requires` frontmatter added where applicable.
+Modifications: cross-skill references updated from `superpowers:` to `seshat-skills:`, storage paths updated from `docs/superpowers/` to `docs/seshat/`, platform-specific hooks and bootstrap removed, `requires` frontmatter added where applicable.
 
 Full MIT license text: [superpowers/LICENSE](https://github.com/obra/superpowers/blob/main/LICENSE)
 
@@ -70,7 +70,7 @@ Full MIT license text: [superpowers/LICENSE](https://github.com/obra/superpowers
 
 The following skill is adapted from code-review-skill:
 
-- `code-review/` — adapted (placed in a subdirectory for Nexus repo layout compatibility)
+- `code-review/` — adapted (placed in a subdirectory for SeshatOS repo layout compatibility)
 
 Full MIT license text: [code-review-skill/LICENSE](https://github.com/awesome-skills/code-review-skill/blob/main/LICENSE)
 
@@ -78,14 +78,14 @@ Full MIT license text: [code-review-skill/LICENSE](https://github.com/awesome-sk
 
 ### EngineerProjects/Nexus_ai (nexus-engine) — original work
 
-The following skills were originally written for the Nexus engine and are maintained in this repository:
+The following skills were originally written for the SeshatOS engine and are maintained in this repository:
 
 - `skill-creator/` — original work, © 2026 KPOVIESSI Stéphane
-- `frontend-design/` — original work, written for Nexus
-- `pdf/` — original work, written for Nexus
-- `docx/` — original work, written for Nexus
-- `pptx/` — original work, written for Nexus
-- `xlsx/` — original work, written for Nexus
+- `frontend-design/` — original work, written for SeshatOS
+- `pdf/` — original work, written for SeshatOS
+- `docx/` — original work, written for SeshatOS
+- `pptx/` — original work, written for SeshatOS
+- `xlsx/` — original work, written for SeshatOS
 
 ---
 
