@@ -19,11 +19,16 @@ Use it when you have decided that an HTML page is the right answer. First check 
 
 ## Steps
 
-1. **Start from the base.** Read `assets/base.html` and write the user's page from it: keep the `:root` tokens, the reset and the spacing, replace the content. Do not ship the base unchanged.
-2. **Apply the rules** of `references/design-rules.md` (read it once, it is short): light background, one accent, system fonts, no emoji, no invented figures, responsive from 360px.
-3. **Take what you need** from `references/patterns.md`: a Chart.js chart, a diagram with arrows, a three.js scene.
-4. **Icons**: search `references/icons.md` with grep for the name of the icon (`### Search`, `### Download`, ...) and copy its inline `<svg>`. Never use an emoji or an icon font.
-5. **Write one file** (`index.html` or a name that fits) with the Write tool, then tell the user in one or two sentences what it shows. Do not paste the code in the answer.
+The files of this skill are in `${SESHAT_SKILL_DIR}/html-page/`. Use these full paths: a relative path will not be found.
+
+1. **Read the base**: `${SESHAT_SKILL_DIR}/html-page/assets/base.html`. Write the user's page from it: keep the `:root` tokens, the reset and the spacing, replace the content. Do not ship the base unchanged.
+2. **Read the rules** once (they are short): `${SESHAT_SKILL_DIR}/html-page/references/design-rules.md`: light background, one accent, system fonts, no emoji, no invented figures, responsive from 360px.
+3. **Only if the page needs it**, read `${SESHAT_SKILL_DIR}/html-page/references/patterns.md` (Chart.js chart, diagram with arrows, three.js scene). Skip it for a plain page.
+4. **Icons**: pick the names from the list below, then fetch each icon with Grep on `${SESHAT_SKILL_DIR}/html-page/references/icons.md` (pattern `^### Name$`, with 2 lines after the match) and copy its `<svg>`. Never read `icons.md` whole (it is long), never use an emoji or an icon font.
+5. **Write the page in one single call** of the file tool (`index.html` or a name that fits), then tell the user in one or two sentences what it shows. Do not paste the code in the answer.
+6. **If a tool refuses the write** (a permission message, a block), do not look for a way around it with other tools or by cutting the file in pieces: say what was refused and ask the user.
+
+Icon names: Plus Minus Close CloseOne Check CheckOne Edit Delete Copy Download Upload Share ShareOne Refresh Search Filter SortThree More SettingTwo Save LinkOne Printer Lock Unlock Star Like Mail SendEmail Attention Help Info Caution Power Up Down Left Right ArrowUp ArrowDown ArrowLeft ArrowRight DoubleRight DoubleLeft Back Return Switch Transfer FullScreen Rotate Redo Undo LoadingOne TrendTwo Trend FileText FileTextOne FileCode FileDoc FileZip Folder FolderOpen DataSheet Table ChartHistogram ChartLine ChartPie ChartGraph ChartProportion Analysis Calendar Time Timer History Bookmark Tag Notebook Paperclip Code CodeBrackets Terminal Computer Cpu Server Wifi Api Branch GithubOne Bug Tool Config Plug PlugOne Robot Magic Cube Layers Key Shield ShieldAdd Fingerprint ApplicationOne Browser Application User Peoples People Home Local Globe Earth Compass Flag Mark Trophy Target Rocket Lightning Fire Sun Moon Water Tree Leaf Brain Book BookOpen Message Comment Phone Camera Video Music Pic Headset VolumeNotice Translate Wallet Currency ShoppingCart Gift Heart
 
 ## What works in the preview
 
