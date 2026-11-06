@@ -16,6 +16,7 @@ Official skill collection for [SeshatOS](https://github.com/EngineerProjects/Nex
 | `test-driven-development` | Red-Green-Refactor TDD cycle with anti-patterns reference |
 | `code-review` | Comprehensive code review for 18+ languages and frameworks |
 | `frontend-design` | Production-grade web UI with intentional aesthetic direction (HTML/CSS/React/Vue) |
+| `html-page` | HTML pages for the SeshatOS preview: base page, design rules, chart/diagram/3D snippets, inline SVG icons |
 | `pdf` | Read, extract, merge, split, create, fill forms, OCR — full PDF toolkit (requires Python) |
 | `docx` | Create and edit Word documents — styles, tables, images, TOC (requires Python) |
 | `pptx` | Build and edit slide decks — layouts, charts, speaker notes (requires Python) |
@@ -76,6 +77,17 @@ Full MIT license text: [code-review-skill/LICENSE](https://github.com/awesome-sk
 
 ---
 
+### Open Design and IconPark — Apache License 2.0
+
+> [https://github.com/nexu-io/open-design](https://github.com/nexu-io/open-design) (design craft notes), [https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark) (icons, © ByteDance)
+
+- `html-page/references/design-rules.md` — rules adapted from the Open Design craft notes (themselves adapted from refero_skill, MIT)
+- `html-page/references/icons.md` — 141 IconPark icons rendered as inline SVG with `currentColor`
+
+Full license text: [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+---
+
 ### EngineerProjects/Nexus_ai (nexus-engine) — original work
 
 The following skills were originally written for the SeshatOS engine and are maintained in this repository:
@@ -86,6 +98,7 @@ The following skills were originally written for the SeshatOS engine and are mai
 - `docx/` — original work, written for SeshatOS
 - `pptx/` — original work, written for SeshatOS
 - `xlsx/` — original work, written for SeshatOS
+- `html-page/` — original work (SKILL.md, assets/base.html, references/patterns.md), with the third-party parts listed above
 
 ---
 
