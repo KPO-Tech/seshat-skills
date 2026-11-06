@@ -1,35 +1,20 @@
-# seshat-skills — Agent Instructions
+# seshat-skills: Agent Instructions
 
-This repository contains the official SeshatOS skills collection. It is automatically cloned by SeshatOS at first boot and updated in the background.
-
-## Structure
-
-Each top-level directory is one skill:
-
-```
-seshat-skills/
-├── skill-creator/           meta-skill for creating new skills
-├── subagent-driven-development/  parallel subagent execution with review gates
-├── systematic-debugging/    root-cause-first debugging protocol
-├── verification-before-completion/  evidence-before-claims verification gate
-├── requesting-code-review/  code review via subagent
-├── writing-plans/           implementation plan writing
-├── test-driven-development/ TDD protocol
-├── brainstorming/           design-before-code exploration (optional Node.js)
-└── code-review/             comprehensive multilingual code review
-```
+This repository contains the skills written for Seshat itself. It is automatically cloned by Seshat at first boot and updated in the background. Public skills from other projects do not belong here: Seshat downloads those from their own sources.
 
 ## Skill format
 
-Each skill directory contains:
-- `SKILL.md` — required entry point (frontmatter + instructions)
-- Optional subdirectories: `agents/`, `references/`, `scripts/`, `assets/`
+Each top-level directory is one skill:
 
-Companion `.md` files referenced from `SKILL.md` are loaded on demand — they are not skills themselves.
+- `SKILL.md`: required entry point (frontmatter with `name` and `description`, then instructions)
+- Optional subdirectories: `agents/`, `assets/`, `references/`, `scripts/`
+
+Companion files referenced from `SKILL.md` are loaded on demand; they are not skills themselves.
 
 ## Contributing
 
 - Every skill must have a `SKILL.md` with valid YAML frontmatter (`name`, `description`)
 - Keep `SKILL.md` under 500 lines; put extended content in `references/`
-- Skills must work without network access during execution (except brainstorming visual companion)
+- Skills must work without network access during execution
 - Do not add platform-specific hooks or bootstrap scripts
+- Credit every third-party source and its licence in the README
