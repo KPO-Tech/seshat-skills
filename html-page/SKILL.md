@@ -1,17 +1,21 @@
 ---
 name: html-page
 description: >
-  Use before writing any HTML page the user will see in the preview panel: a
-  dashboard, a visual explanation, an interactive demo, a 3D scene, a landing
-  page, a diagram too large for the chat components. Gives a tested base page,
-  design rules, ready snippets (charts, diagrams, three.js) and a set of inline
-  SVG icons, so the page looks designed and works in the sandboxed preview.
+  Only for an HTML artifact: a single page written to be shown in the Seshat
+  preview panel (a dashboard, a visual explanation, an interactive demo, a 3D
+  scene, a diagram too large for the chat components). Gives a tested base
+  page, design rules, ready snippets (charts, diagrams, three.js) and inline SVG
+  icons, so the page looks designed and works in the sandboxed preview. Do not
+  use it for a real project (a website or an app written as files in a
+  workspace): use the other design and frontend skills for that.
 user-invocable: true
 ---
 
 # HTML page for the preview
 
-Use this skill when you have decided that an HTML page is the right answer. First check that it is: a chart, a table, a form, a diagram, a flow, a formula, a plan or a comparison are answered with the chat components (`seshat-ui`), not with a page. A page is for what the components cannot do (3D, animation, simulation, a free layout) or what the user asked to see as a page.
+Use this skill only to write an **HTML artifact**: one page made to be shown in the preview panel. For anything else (a real website or application built as files in a project, a component for an existing codebase, a redesign), do not use it: prefer the other design and frontend skills that are installed.
+
+Use it when you have decided that an HTML page is the right answer. First check that it is: a chart, a table, a form, a diagram, a flow, a formula, a plan or a comparison are answered with the chat components (`seshat-ui`), not with a page. A page is for what the components cannot do (3D, animation, simulation, a free layout) or what the user asked to see as a page.
 
 ## Steps
 

@@ -8,7 +8,7 @@ Public, third-party skills (code review, debugging, documents and so on) are not
 
 | Skill | Description |
 |---|---|
-| `html-page` | HTML pages for the Seshat preview: base page, design rules, chart/diagram/3D snippets, inline SVG icons |
+| `html-page` | HTML artifacts only (a page shown in the Seshat preview); other design work uses the public skills: base page, design rules, chart/diagram/3D snippets, inline SVG icons |
 
 ## Structure
 
