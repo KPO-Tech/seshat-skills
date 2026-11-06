@@ -6,9 +6,7 @@ Public, third-party skills (code review, debugging, documents and so on) are not
 
 ## Skills
 
-| Skill | Description |
-|---|---|
-| `html-page` | HTML artifacts only (a page shown in the Seshat preview); other design work uses the public skills: base page, design rules, chart/diagram/3D snippets, inline SVG icons |
+None for now. The page base for HTML artifacts moved into the system prompt of SeshatOS (ADR 0024), where it costs no extra reads.
 
 ## Structure
 
@@ -25,11 +23,6 @@ Skills are installed to `.seshat/skills/repos/seshat-skills/` and updated in the
 
 ## Credits and Licenses
 
-`html-page` is original work, with these third-party parts:
-
-- `html-page/references/design-rules.md`: rules adapted from the [Open Design](https://github.com/nexu-io/open-design) craft notes (Apache-2.0), themselves adapted from refero_skill (MIT).
-- `html-page/references/icons.md`: 141 icons from [IconPark](https://github.com/bytedance/IconPark) (Apache-2.0, ByteDance), rendered as inline SVG with `currentColor`.
-
-Apache-2.0 text: https://www.apache.org/licenses/LICENSE-2.0
+No third-party content is kept here at the moment.
 
 This repository is released under the MIT License, see [LICENSE](LICENSE).
